@@ -54,7 +54,21 @@
     $arr = array ("apple",array("Dog","Rose"));
     list($a,list($b,$c)) = $arr;
 
-    
+    $temp = array
+    (
+        array("Id","Name","Salary"),
+        array(1,"sonoo",400000),
+        array(2,"john",3500000),
+        array(3,"omkar",60000)
+    );
 
+    for($i=0; $i<count($temp) ; $i++){
+        for($j=0; $j< count($temp[0]) ;$j++){
+            echo $temp[$i][$j]." ";
+        }
+        echo "\n";
+    }
+
+    // echo $temp[0][0]." ",$temp[0][1]," ",$temp[0][2],"\n";
 
 ?>
